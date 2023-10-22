@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Javascript/script.js"></script>
+</head>
+
+<body onload="onload()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="screenshots.html">Screenshots</a></li>
+                <li><a href="about.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="container-center">
+                <section>
+                    <h1 class="container__header">Give me feedback!</h1>
+                    <p class="param_h2">Note! If you get an error message while trying to send a message, it's due to server issues.</p>
+
+               
+                    <form class="contact__form" id="contactForm" method="POST"
+                        action="http://localhost:8080/submit-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <br>
+                        <label for="message">Give me a message!</label>
+               
+                        <div class="message-box">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" id="submitButton">Submit</button>
+                    </form>
+
+                    <div id="confirmationMessage" style="display: none;"></div>
+                </section>
+
+                <button class="container__btn" onclick="darkmode()">Dark?</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eerik's Website</p>
+        <p>Follow Me:
+            <br>
+            <a href="https://twitter.com/EerikWai">Twitter</a>
+        </p>
+        <p>Social Links:
+            <br>
+            <a href="https://www.youtube.com/channel/UCv9Uu5pPKFc7zYyzDJeBSXQ">Youtube</a>
+        </p>
+    </footer>
+    </div>
+    </div>
+</body>
+
+</html>

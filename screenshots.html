@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Javascript/script.js"></script>
+</head>
+
+<body onload="onload()">
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="screenshots.html">Screenshots</a></li>
+                <li><a href="about.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="container-center">
+                <h1 class="container__header">Screenshots</h1>
+
+                <p class="container__param">
+                    This page contains screenshots of different games that I've played recently.
+                    <br>
+                    <br>
+                    You can enlarge an image by clicking it and close the image by pressing "X" in the top right corner.
+                </p>
+
+                <div class="container-image"></div>
+                <button class="container__btn" onclick="darkmode()">Change theme</button>
+
+                <div class="full-img" id="fullImgBox">
+                    <img src="" id="fullImg">
+                    <span onclick="closeFullImg()">X</span>
+                </div>
+
+                <div class="img-gallery">
+                    <img src="img/COTW1.png" onclick="openFullImg(this.src)">
+                    <img src="img/COTW3.png" onclick="openFullImg(this.src)">
+                    <img src="img/COTW2.png" onclick="openFullImg(this.src)">
+                    <img src="img/COTW4.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/Cyberpunk1.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/Cyberpunk2.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/PUBG1.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/PUBG2.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/DS1.jpg" onclick="openFullImg(this.src)">
+                    
+                </div>
+
+            </div>
+            <script>
+                var fullImgBox = document.getElementById("fullImgBox");
+                var fullImg = document.getElementById("fullImg");
+
+                function openFullImg(pic) {
+                    fullImgBox.style.display = "flex";
+                    fullImg.src = pic;
+                }
+
+                function closeFullImg() {
+                    fullImgBox.style.display = "none";
+                }
+            </script>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Eerik's Website</p>
+        <p>Follow Me:
+            <br>
+            <a href="https://twitter.com/EerikWai">Twitter</a>
+        </p>
+        <p>Social Links:
+            <br>
+            <a href="https://www.youtube.com/channel/UCv9Uu5pPKFc7zYyzDJeBSXQ">Youtube</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
