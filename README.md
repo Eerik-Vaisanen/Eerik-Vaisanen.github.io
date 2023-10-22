@@ -22,7 +22,9 @@ Simple interactions and use of functions such as dark theme button and the submi
 I'd give 4/5 for the JS section since most of the requirements are met, but the JS functions and operations are very simple (validation for name, email, and message on the form validation and dark-theme button).
 
 ## Asynchronous Operations
-Timers are not used in the website but AJAX call is used when loading the website and fetch is used in a local host server (Download the folder "testReceiver" and type node testReceiver.js in the terminal and submit a form in the "Feedback" page). When an error occurs an error is displayed on top of the website. 
+Timers are not used in the website but AJAX call is used when loading the website and fetch is used in a local host server. When an error occurs an error is displayed on top of the website. 
+
+Download the folder "testReceiver" and open the folder in VS Code and type node testReceiver.js in the terminal and submit a form in the "Feedback" page. You can check if the message was received from the form by going to "http://localhost:8080/get-form-data".
 
 Data from the asynchronous call is not displayed on the webpage and filtering and sorting are not used on the website. All in all I'd give 2/5 or 3/5 for the asynchronous operations since some of them are used on the website, but the use of them is very simple.
 
