@@ -1,5 +1,5 @@
 # Eerik-Vaisanen.github.io
-
+The website: "https://eerik-vaisanen.github.io/index.html"
 ## The website grading:
 * HTML 25%
 * CSS 25%
@@ -30,3 +30,4 @@ Data from the asynchronous call is not displayed on the webpage and filtering an
 
 ## Conclusion
 In total the website receives 15-16/20 points which equals to a grade 3. The HTML and CSS properities are consistent and even the JS scripts and asynchronous operations work properly.
+
